@@ -21,7 +21,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
     --format="value(projectNumber)")-compute@developer.gserviceaccount.com \
     --role="roles/container.developer"
 # creates the Artifact Registry repo
-gcloud artifacts repositories create pop-stats --location=us-central1 \
+gcloud artifacts repositories create pop-stats --location=us-west1 \
 --repository-format=docker
 # customize the clouddeploy.yaml 
 sed -e "s/project-id-here/${PROJECT_ID}/" clouddeploy.yaml > clouddeploy.yaml
