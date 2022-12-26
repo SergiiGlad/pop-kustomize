@@ -21,7 +21,7 @@ metadata:
   name: test
 description: test cluster
 gke:
-  cluster: projects/qwiklabs-gcp-01-4d50a9624c8e/locations/us-west1/clusters/testcluster
+  cluster: projects/project-id-here/locations/us-west1/clusters/testcluster
 ---
 
 apiVersion: deploy.cloud.google.com/v1
@@ -30,7 +30,7 @@ metadata:
   name: staging
 description: staging cluster
 gke:
-  cluster: projects/qwiklabs-gcp-01-4d50a9624c8e/locations/us-west1/clusters/stagingcluster
+  cluster: projects/project-id-here/locations/us-west1/clusters/stagingcluster
 ---
 
 apiVersion: deploy.cloud.google.com/v1
@@ -40,4 +40,4 @@ metadata:
 description: prod cluster
 requireApproval: true
 gke:
-  cluster: projects/qwiklabs-gcp-01-4d50a9624c8e/locations/us-west1/clusters/prodcluster
+  cluster: projects/project-id-here/locations/us-west1/clusters/prodcluster
