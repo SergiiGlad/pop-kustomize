@@ -24,8 +24,8 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 gcloud artifacts repositories create pop-stats --location=us-east1 \
 --repository-format=docker
 # customize the clouddeploy.yaml 
-sed -e "s/project-id-here/${PROJECT_ID}/" clouddeploy.yaml > clouddeploy.yaml
+#sed -e "s/project-id-here/${PROJECT_ID}/" clouddeploy.yaml > clouddeploy.yaml
 # creates the Google Cloud Deploy pipeline
 gcloud deploy apply --file clouddeploy.yaml \
---region=us-east1 --project=$PROJECT_ID
+--region=us-east1 --project=qwiklabs-gcp-00-43f02a412735
 echo "init done. To create clusters, run: ./gke-cluster-init.sh"
